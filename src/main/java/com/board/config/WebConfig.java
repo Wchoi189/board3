@@ -7,14 +7,13 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-public class WebConfig extends WebMvcConfigurerAdapter implements WebApplicationInitializer {
+public class WebConfig implements WebApplicationInitializer {
     @Override
     public void onStartup(javax.servlet.ServletContext servletContext) throws ServletException {
 
@@ -48,15 +47,15 @@ public class WebConfig extends WebMvcConfigurerAdapter implements WebApplication
     }
 
     // equivalents for <mvc:resources/> tags
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/css/**").addResourceLocations("/css/").setCachePeriod(31556926);
-        registry.addResourceHandler("/img/**").addResourceLocations("/img/").setCachePeriod(31556926);
-        registry.addResourceHandler("/js/**").addResourceLocations("/js/").setCachePeriod(31556926);
-    }
+
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/static/css/**").addResourceLocations("/static/css/").setCachePeriod(31556926);
+//        registry.addResourceHandler("/img/**").addResourceLocations("/img/").setCachePeriod(31556926);
+//        registry.addResourceHandler("/js/**").addResourceLocations("/js/").setCachePeriod(31556926);
+//    }
 
     // equivalent for <mvc:default-servlet-handler/> tag
-    @Override
+
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }

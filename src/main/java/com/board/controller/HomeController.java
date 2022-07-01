@@ -13,14 +13,19 @@ public class HomeController {
         model.addAttribute("user_name", "Bryan");
         model.addAttribute("email", "wchoi189@gmail.com");
         System.out.println("home controller working");
-        return "index";
+        return "board_index";
     }
-
+    @GetMapping("/insert")
+    public String insert() {
+        return "board_insert";
+    }
     @GetMapping("/list")
-
     public String list() {
-        System.out.println("list url working");
-        return "list.jsp";
+        return "board_list";
+    }
+    @GetMapping("/list_info")
+    public String list_read() {
+        return "board_list_info";
     }
 
     @GetMapping("/jsp")

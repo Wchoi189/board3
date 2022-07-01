@@ -10,11 +10,12 @@
 <html>
 <head>
     <title>Hello Page</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link href="${path}/resources/css/index.css" rel="stylesheet"/>
+<%--    <link rel="stylesheet" type="text/css" href="css/board_index.css">--%>
+<%--   <link href="${path}css/board_index.css" rel="stylesheet"/>--%>
 </head>
 <body>
     <h4 class="index">Hello. Welcome to index page.</h4>
     <p>This page is a JSP</p>
+<p>${path}</p>
 </body>
 </html>

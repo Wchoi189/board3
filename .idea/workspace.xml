@@ -9,24 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="POM library edit. Spring frame + Jstl dependency added">
-      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="&#10;layout test">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/board_index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/board_insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/board_list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_insert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_list_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/fragments/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/RootContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/RootContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/WebContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/servlet-context.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +43,19 @@
         <option value="Jsp File" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
-        <option value="CSS File" />
         <option value="Class" />
-        <option value="HTML File" />
         <option value="XML Properties File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -60,7 +69,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2B9CHi7Qd9eoBqSpNmehlM1Rjpp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -89,7 +98,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "sshConsole",
     "spring.configuration.checksum": "864cf3104081b26a1b6a68dc2af06e8a"
   },
   "keyToStringList": {
@@ -103,14 +112,14 @@
       <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\templates\fragments" />
+      <recent name="C:\data\board3\src\main\resources\static" />
+      <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\templates" />
       <recent name="C:\data\board3\src\main\webapp\resources" />
       <recent name="C:\data\board3\src\main\webapp" />
-      <recent name="C:\data\board3\src\main\webapp\temp" />
-      <recent name="C:\data\board3\src\main\resources" />
-      <recent name="C:\data\board3\src\main\webapp\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.81">
+  <component name="RunManager" selected="JUnit.MySQLConnectionTest.testConnection">
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -294,11 +303,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MySQLConnectionTest.testConnection" />
         <item itemvalue="Maven.board3 [clean]" />
         <item itemvalue="Tomcat Server.index1.jsp" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="JUnit.MySQLConnectionTest.testConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +324,7 @@
       <workItem from="1656491820290" duration="1063000" />
       <workItem from="1656548704214" duration="1689000" />
       <workItem from="1656550615183" duration="21207000" />
-      <workItem from="1656635810128" duration="4716000" />
+      <workItem from="1656635810128" duration="25279000" />
     </task>
     <task id="LOCAL-00001" summary="working spring mvc setup with jdbc">
       <created>1656320716558</created>
@@ -324,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656320716558</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="POM library edit. Spring frame + Jstl dependency added&#10;+css">
+      <created>1656640881665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656640881665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +372,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working spring mvc setup with jdbc" />
     <MESSAGE value="POM library edit. Spring frame + Jstl dependency added" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM library edit. Spring frame + Jstl dependency added" />
+    <MESSAGE value="POM library edit. Spring frame + Jstl dependency added&#10;+css" />
+    <MESSAGE value="&#10;+css" />
+    <MESSAGE value="&#10;layout test" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;layout test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
