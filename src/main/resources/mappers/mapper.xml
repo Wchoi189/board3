@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dh.test.mapper.UserMapper">
-    <select id="select" parameterType="String" resultType="userDto">
-        select name, id
-        from test
-        where id = #{id}
+<mapper namespace="dh.test.mapper.BoardMapper">
+    <select id="select" parameterType="String" resultType="BoardDto">
+        select title, file_name, save_path, reg_date
+        from board
+        where boardid = #{boardid}
     </select>
 
-    <select id="list" parameterType="String" resultType="userDto">
-        select name, id
-        from test
+    <select id="list" parameterType="String" resultType="BoardDto">
+        select *
+        from board
     </select>
 
     <insert id="insert">
-        insert into test (name)
-        values (#{value})
+        insert into board (title, file_name, save_path, reg_date)
+        values (title = #{value}, file_name= #{file_name}, save_path = #{save_path}, reg_date = current_date)
     </insert>
 
     <delete id="delete">
-        delete from test
-        where name = #{name}
+        delete from board
+        where boardid = #{boardid}
     </delete>
 
-    <update id="update" parameterType="dh.test.dto.UserDto">
-        update test
-        set name = #{name}
+    <update id="update" parameterType="dh.test.dto.BoardDto">
+        update board
+        set title = #{title}, file_name = #{file_name}, save_path = #{save_path}, reg_date = #{reg_date}
         where id = #{id}
     </update>
 </mapper>
