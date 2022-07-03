@@ -1,0 +1,4 @@
+<mapper namespace="test.java.SqlTest">
+    <script/>
+    <select id="getTime" resultType="string">select now() today</select>
+</mapper>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="interview_assignment_db@localhost" uuid="fe9441dd-b395-4771-930c-45b95a77482f">
+    <data-source source="LOCAL" name="interview_assignment_db@localhost " uuid="82cd8ba6-a135-4645-b5f9-45d21802c53d">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mariadb://localhost:3306/interview_assignment_db</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="JdbcLog.Enabled" value="true" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="6b2b0f36-74d0-4cce-b3d6-c022da7fffd7">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>spring
+
+C:/Users/wbc89/Desktop/my.workplace/board3/src/main/webapp/ApplicationContext.xml</remarks>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://127.0.0.1:3306/interview_assignment_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

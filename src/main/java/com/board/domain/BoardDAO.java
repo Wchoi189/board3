@@ -2,12 +2,18 @@ package com.board.domain;
 
 
 import com.board.dto.BoardDTO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
+import java.util.List;
+
 
 public interface BoardDAO {
-    public ArrayList<BoardDTO> board_list();
+    public List<BoardDTO> list();
     public void insert (BoardDTO dto);
     public BoardDTO read(String boardId);
     public void update(BoardDTO dto);
+
+    public String getTime();
 }

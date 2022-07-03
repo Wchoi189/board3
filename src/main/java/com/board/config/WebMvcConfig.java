@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.board.controller")
+@ComponentScan("com.board")
 
 public class WebMvcConfig implements WebMvcConfigurer {
 

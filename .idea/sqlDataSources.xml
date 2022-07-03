@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="5eaa3cd7-f700-44c5-a54e-a4f02ded0e39" name="interview_assignment_db@localhost  Mapping">
+      <data-sources db="82cd8ba6-a135-4645-b5f9-45d21802c53d" ddl="84120258-2e91-41b2-9e08-797c1b53d678" />
+      <scope>
+        <node kind="database" qname="@">
+          <node kind="schema" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>

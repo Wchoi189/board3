@@ -3,17 +3,17 @@ package com.board.dto;
 import java.util.Date;
 
 public class BoardDTO {
-    private int boardId;
+    private String boardId;
     private String title;
     private String file_name;
     private String file_path;
     private Date date;
 
-    public int getBoardId() {
+    public String getBoardId() {
         return boardId;
     }
 
-    public void setBoardId(int boardId) {
+    public void setBoardId(String boardId) {
         this.boardId = boardId;
     }
 

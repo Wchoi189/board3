@@ -4,6 +4,10 @@
 
 <configuration>
     <typeAliases>
-        <typeAlias alias="userDto" type="dh.test.dto.UserDto"/>
+        <typeAlias alias="boardDTO" type="com.board.dto.BoardDTO"/>
     </typeAliases>
+
+    <mappers>
+        <mapper resource="mappers/mapper.xml" />
+    </mappers>
 </configuration>
