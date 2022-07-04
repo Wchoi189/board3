@@ -9,42 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="Dto, DAO, mapper added">
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/board/mappers/mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SqlTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SqlTest.xml" afterDir="false" />
+    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="sqlSession. Can't create bean. Error. Not Working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/board/mapper/TimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dbTest/TimeMapperTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/root-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-07-02__12_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-07-02__12_02__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/WebMvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDTOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/dto/BoardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/dto/BoardDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbTest/MySQLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbTest/MySQLConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/dao/BoardDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/mappers/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/mapper/mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ApplicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +38,7 @@
         <option value="XML Properties File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="spring-beans.schema" />
       </list>
@@ -101,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/wbc89/Desktop/carrot-i/db",
+    "last_opened_file_path": "C:/Users/wbc89/Desktop/my.workplace/board3/src/main/java/com/board/mapper",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
@@ -110,7 +90,7 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
@@ -127,18 +107,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wbc89\Desktop\my.workplace\board3\src\main\java\com\board\mapper" />
       <recent name="C:\Users\wbc89\Desktop\my.workplace\board3\src\main\java\com\board" />
       <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wbc89\Desktop\my.workplace\board3\src\main\resources\config" />
       <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\templates\fragments" />
       <recent name="C:\data\board3\src\main\resources\static" />
       <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\templates" />
       <recent name="C:\data\board3\src\main\webapp\resources" />
-      <recent name="C:\data\board3\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.81">
+  <component name="RunManager" selected="JUnit.TimeMapperTests.testGetTime">
     <configuration name="MySQLConnectionTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="board3" />
       <extension name="coverage">
@@ -150,6 +131,22 @@
       <option name="PACKAGE_NAME" value="dbTest" />
       <option name="MAIN_CLASS_NAME" value="dbTest.MySQLConnectionTest" />
       <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeMapperTests.testGetTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="board3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dbTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dbTest" />
+      <option name="MAIN_CLASS_NAME" value="dbTest.TimeMapperTests" />
+      <option name="METHOD_NAME" value="testGetTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -308,6 +305,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.TimeMapperTests.testGetTime" />
       <item itemvalue="JUnit.MySQLConnectionTest.testConnection" />
       <item itemvalue="Maven.board3 [clean]" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.81" />
@@ -315,6 +313,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TimeMapperTests.testGetTime" />
         <item itemvalue="Maven.board3 [clean]" />
         <item itemvalue="JUnit.MySQLConnectionTest.testConnection" />
         <item itemvalue="Tomcat Server.index1.jsp" />
@@ -410,22 +409,11 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$PROJECT_DIR$/lib/spring-web-5.2.3.RELEASE.jar!/org/springframework/web/WebApplicationInitializer.class</url>
           <line>11</line>
-          <properties class="org.springframework.web.WebApplicationInitializer" method="onStartup">
+          <properties class="org.springframework.web.WebApplicationInitializer">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/board/controller/HomeController.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/board/domain/BoardDAOImpl.java</url>
-          <line>18</line>
-          <properties field="template" class="com.board.domain.BoardDAOImpl" />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

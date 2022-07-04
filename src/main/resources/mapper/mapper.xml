@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.board.mappers.mapper">
+<mapper namespace="src.main.resources.mappers.mapper">
     <select id="select" parameterType="String" resultType="com.board.dto.BoardDTO">
         select title, file_name, save_path, reg_date
         from board
         where board_id = #{boardid}
     </select>
 
-    <select id="list" parameterType="String" resultType="com.board.dto.BoardDTO">
+    <select id="list"  resultType="com.board.dto.BoardDTO">
         select *
         from board
     </select>
@@ -28,5 +28,4 @@
         set title = #{title}, file_name = #{file_name}, save_path = #{save_path}, reg_date = #{reg_date}
         where board_id = #{id}
     </update>
-    <select id="getTime" resultType="String">select now() today</select>
 </mapper>

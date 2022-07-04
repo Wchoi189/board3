@@ -2,18 +2,8 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-221.5921.22">
     <data-source name="interview_assignment_db@localhost " uuid="82cd8ba6-a135-4645-b5f9-45d21802c53d">
-      <database-info product="MariaDB" version="10.8.3-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.7.3" dbms="MARIADB" exact-version="10.8.3" exact-driver-version="2.7">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="interview_assignment_db" />
-        </introspection-scope>
-      </schema-mapping>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MARIADB" exact-version="0" />
+      <schema-mapping />
     </data-source>
     <data-source name="dataSource" uuid="6b2b0f36-74d0-4cce-b3d6-c022da7fffd7">
       <database-info product="MariaDB" version="10.8.3-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.7.3" dbms="MARIADB" exact-version="10.8.3" exact-driver-version="2.7">
@@ -21,8 +11,12 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <user-name>root</user-name>
-      <schema-mapping />
+      <user-name>user</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="interview_assignment_db" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>
