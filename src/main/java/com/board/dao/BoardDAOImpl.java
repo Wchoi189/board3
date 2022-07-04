@@ -1,15 +1,12 @@
-package com.board.domain;
+package com.board.dao;
 
 import com.board.dto.BoardDTO;
 import org.apache.ibatis.session.SqlSession;
-import org.mybatis.spring.SqlSessionTemplate;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @Repository

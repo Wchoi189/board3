@@ -8,6 +8,6 @@
     </typeAliases>
 
     <mappers>
-        <mapper resource="mappers/mapper.xml" />
+        <mapper resource="classpath:/mappers/mapper.xml" />
     </mappers>
 </configuration>
