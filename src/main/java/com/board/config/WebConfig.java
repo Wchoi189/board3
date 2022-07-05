@@ -22,8 +22,10 @@ public class WebConfig implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext webContext = new AnnotationConfigWebApplicationContext();
         webContext.register(WebMvcConfig.class);
 
-        // 2. DispatcherServlet 객체 생성 및 추가
+        // 2. Create a DispatcherServlet 객체 생성 및 추가
         DispatcherServlet dispatcherServlet = new DispatcherServlet(webContext);
+
+        // (Register dispatcher servlet with servlet context)
         ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", dispatcherServlet );
 
         // 3. 서블릿 매핑 및 부가 설정

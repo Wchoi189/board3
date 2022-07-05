@@ -1,6 +1,7 @@
 package com.board.controller;
 
 import com.board.dao.BoardDAO;
+import com.board.dao.BoardDAOImpl;
 import com.board.dto.BoardDTO;
 import org.mybatis.logging.Logger;
 import org.mybatis.logging.LoggerFactory;
@@ -24,8 +25,8 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
 
 
 
-
-    private BoardDAO bdao;
+@Autowired
+    private BoardDAOImpl bdao;
     private BoardDTO bdto;
 
 
@@ -53,7 +54,8 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     public String board_list(Model model){
         List<BoardDTO> blist = bdao.list();
         model.addAttribute("list", blist);
-        System.out.println("list.json running");
+
+
         return  "/list";
     }
 
@@ -67,6 +69,7 @@ private static final Logger logger = LoggerFactory.getLogger(HomeController.clas
     @GetMapping("/jsp")
     public String jsp(){
         System.out.println("/jsp");
+
         return "index1.jsp";
     }
     @GetMapping("/time")

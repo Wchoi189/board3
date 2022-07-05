@@ -17,9 +17,9 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import java.util.concurrent.TimeUnit;
 
-@Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.board")
+@Configuration
+@ComponentScan(basePackages = "com.board.controller")
 
 
 public class WebMvcConfig implements WebMvcConfigurer {
