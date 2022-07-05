@@ -46,16 +46,6 @@ public class WebConfig implements WebApplicationInitializer {
         // Filter 설정 -e
     }
 
-    // equivalents for <mvc:resources/> tags
-
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("/static/css/**").addResourceLocations("/static/css/").setCachePeriod(31556926);
-//        registry.addResourceHandler("/img/**").addResourceLocations("/img/").setCachePeriod(31556926);
-//        registry.addResourceHandler("/js/**").addResourceLocations("/js/").setCachePeriod(31556926);
-//    }
-
-    // equivalent for <mvc:default-servlet-handler/> tag
-
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
     }

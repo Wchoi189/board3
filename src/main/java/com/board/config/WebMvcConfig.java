@@ -19,7 +19,8 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.board")
+@ComponentScan(basePackages = "com.board")
+
 
 public class WebMvcConfig implements WebMvcConfigurer {
 
@@ -84,4 +85,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
 
     }
+
+
 }
