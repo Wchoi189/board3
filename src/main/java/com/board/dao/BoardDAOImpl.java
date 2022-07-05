@@ -1,48 +1,55 @@
 package com.board.dao;
 
-import com.board.dto.BoardDTO;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionTemplate;
-import org.mybatis.spring.support.SqlSessionDaoSupport;
+import com.board.entity.Board;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository
-public class BoardDAOImpl extends SqlSessionDaoSupport implements BoardDAO {
+public class BoardDAOImpl implements BoardDAO{
 
     @Autowired
-    public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
-        super.setSqlSessionFactory(sqlSessionFactory);
-    }
+    private SessionFactory sessionFactory;
 
-    SqlSession sqlSession = getSqlSession();
-    private String namespace="mappers.mapper";
-
-     //개시판 목록 출력
     @Override
-    public List<BoardDTO> list() {
-        System.out.println("mapper statement->");
-        return sqlSession.selectList(namespace+ ".list");
+    public List<Board> getBoardList() {
+        Session session = sessionFactory.getCurrentSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Board> cq = cb.createQuery(Board.class);
+        Root<Board> root = cq.from(Board.class);
+        cq.select(root);
+        Query query = session.createQuery(cq);
+        return query.getResultList();
     }
 
-     //개시 입력
     @Override
-    public void insert(BoardDTO dto) {
-        sqlSession.insert(namespace + ".insert", dto);
-    }
-    // 개시판 선택 글 출력(Read boardId)
-    @Override
-    public BoardDTO read(String boardId) {
-        return sqlSession.selectOne(namespace + ".select", boardId);
-    }
-    // 개시판 목록 출력
-    @Override
-    public void update(BoardDTO dto) {
-        sqlSession.update(namespace + ".update", dto);
+    public void insertBoard(Board theBoard) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        currentSession.saveOrUpdate(theBoard);
     }
 
+    @Override
+    public Board readBoardById(String board_Id) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Board theBoard = currentSession.get(Board.class, board_Id);
+        return theBoard;
+    }
 
+    @Override
+    public void updateBoardById(Board theBoard) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        currentSession.saveOrUpdate(theBoard);
+    }
+
+    @Override
+    public void deleteBoardById(String board_Id) {
+
+    }
 }

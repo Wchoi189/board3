@@ -80,8 +80,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         WebMvcConfigurer.super.addResourceHandlers(registry);
         // Static Resources 설정
-        registry.addResourceHandler("/**")
-                .addResourceLocations("classpath:/templates/", "classpath:/static/")
+        registry.addResourceHandler("/**","/resources/**")
+                .addResourceLocations("classpath:/templates/", "classpath:/static/","/resources/")
                 .setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
 
     }
