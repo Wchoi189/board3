@@ -32,8 +32,8 @@ public class AppContext {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(environment.getRequiredProperty("com.mysql.cj.jdbc.Driver"));
-        dataSource.setUrl(environment.getRequiredProperty("jdbc:mariadb://127.0.0.1:3306/interview_assignment_db"));
+        dataSource.setDriverClassName(environment.getRequiredProperty("com.mysql.jdbc.Driver"));
+        dataSource.setUrl(environment.getRequiredProperty("jdbc:mysql://localhost:3306/interview_assignment_db?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false"));
         dataSource.setUsername(environment.getRequiredProperty("user"));
         dataSource.setPassword(environment.getRequiredProperty("pass"));
         return dataSource;

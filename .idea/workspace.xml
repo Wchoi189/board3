@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="server error continues">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/MyBatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/MyBatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +55,18 @@
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/templates/board_insert.html" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -80,7 +99,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/wbc89/Desktop/carrot-i/db",
+    "last_opened_file_path": "C:/Users/wbc89/Desktop/my.workplace/SpringMVC-Thymeleaf-Carrot",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
@@ -89,11 +108,11 @@
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.44942528",
     "settings.editor.selected.configurable": "editor.preferences.import",
-    "spring.configuration.checksum": "63e38437bcea9361144b1908fd529270",
+    "spring.configuration.checksum": "b01ee2eeeaf0981a4c8078365d38661d",
     "typescript.add.unambiguous.imports.on.the.fly": "true"
   },
   "keyToStringList": {
@@ -118,7 +137,7 @@
       <recent name="C:\data\board3\src\main\webapp\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.81">
+  <component name="RunManager" selected="Maven.board3 [install]">
     <configuration name="MyBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="board3" />
       <extension name="coverage">
@@ -361,6 +380,7 @@
       <workItem from="1656635810128" duration="25279000" />
       <workItem from="1656839824635" duration="13814000" />
       <workItem from="1656979150239" duration="9853000" />
+      <workItem from="1657114121044" duration="3131000" />
     </task>
     <task id="LOCAL-00001" summary="working spring mvc setup with jdbc">
       <created>1656320716558</created>
@@ -411,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657032462542</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="server error continues">
+      <created>1657032825596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657032825596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

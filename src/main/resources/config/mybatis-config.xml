@@ -12,7 +12,7 @@
             <setting name="defaultExecutorType" value="SIMPLE" />
             <setting name="defaultStatementTimeout" value="25000" />
         </settings>
-
+    <!--    VO객체 설정-->
     <typeAliases>
         <typeAlias alias="hashmap" type="java.util.HashMap" />
         <typeAlias alias="Int" type="java.lang.Integer" />
