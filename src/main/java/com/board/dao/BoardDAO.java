@@ -2,16 +2,18 @@ package com.board.dao;
 
 
 import com.board.dto.BoardDTO;
+import com.board.entity.Board;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.context.annotation.Bean;
 
 import java.util.List;
 
 
-@Mapper
+
 public interface BoardDAO {
-    public List<BoardDTO> list();
-    public void insert (BoardDTO dto);
-    public BoardDTO read(String boardId);
-    public void update(BoardDTO dto);
+    public List<Board> list();
+    public void insert (Board board);
+    public Board read(String boardId);
+    public void update(Board board);
 
 }

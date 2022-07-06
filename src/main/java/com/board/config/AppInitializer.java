@@ -6,14 +6,12 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-public class WebConfig implements WebApplicationInitializer {
+public class AppInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(javax.servlet.ServletContext servletContext) throws ServletException {
 
@@ -35,7 +33,7 @@ public class WebConfig implements WebApplicationInitializer {
 
         // Root Context Config 설정 -s
         AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
-        rootContext.register(RootContext.class);
+        rootContext.register(AppContext.class);
 
         ContextLoaderListener listener = new ContextLoaderListener(rootContext);
         servletContext.addListener(listener);

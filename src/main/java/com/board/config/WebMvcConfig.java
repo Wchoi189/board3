@@ -1,10 +1,14 @@
 package com.board.config;
 
+import com.board.dao.BoardDAO;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.CacheControl;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -15,14 +19,13 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
+import javax.sql.DataSource;
 import java.util.concurrent.TimeUnit;
 
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = "com.board.controller")
-
-
-public class WebMvcConfig implements WebMvcConfigurer {
+public class WebMvcConfig implements WebMvcConfigurer{
 
 
     private ApplicationContext applicationContext;
@@ -85,6 +88,15 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
 
     }
+//    @Bean
+//    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
+//        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+//        sqlSessionFactoryBean.setDataSource(dataSource);
+//        return sqlSessionFactoryBean;
+//    }
+
+
+
 
 
 }

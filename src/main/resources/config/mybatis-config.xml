@@ -19,7 +19,7 @@
         <typeAlias alias="boardDTO" type="com.board.dto.BoardDTO"/>
     </typeAliases>
 
-    <mappers>
-        <mapper resource="classpath:/mappers/mapper.xml" />
-    </mappers>
+<!--    <mappers>-->
+<!--        <mapper resource="classpath:/mappers/mapper.xml" />-->
+<!--    </mappers>-->
 </configuration>
