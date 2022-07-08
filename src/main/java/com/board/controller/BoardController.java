@@ -2,6 +2,8 @@ package com.board.controller;
 
 import com.board.entity.Board;
 import com.board.service.BoardService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/board")
 public class BoardController {
+    private final Logger LOGGER = LoggerFactory.getLogger(getClass());
     private BoardService boardService;
 
     @GetMapping("/listBoard")
