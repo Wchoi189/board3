@@ -27,6 +27,17 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     private ApplicationContext applicationContext;
 
+    // + JSP View Resolver
+    @Bean
+    public InternalResourceViewResolver jspViewResolver(){
+        final InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setOrder(10);
+        viewResolver.setViewClass(JstlView.class);
+        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setSuffix("");
+        viewResolver.setViewNames("*.jsp");
+        return viewResolver;
+    }
     /*
      * STEP 1 - Create SpringResourceTemplateResolver
      * */
@@ -64,17 +75,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
         registry.viewResolver(resolver);
 
     }
-    // + JSP View Resolver
-    @Bean
-    public InternalResourceViewResolver jspViewResolver(){
-        final InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setOrder(10);
-        viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF/views/");
-        viewResolver.setSuffix("");
-        viewResolver.setViewNames("*.jsp");
-        return viewResolver;
-    }
+
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -85,6 +86,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
 
     }
+
 
 
 }

@@ -16,10 +16,10 @@ public class Board {
     private String title;
 
     @Column(name = "file_name")
-    private String firstName;
+    private String file_name;
 
     @Column(name = "save_path")
-    private String lastName;
+    private String save_path;
 
     @Column(name = "reg_date")
     private Date date;
@@ -40,20 +40,20 @@ public class Board {
         this.title = title;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFile_name() {
+        return file_name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFile_name(String file_name) {
+        this.file_name = file_name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSave_path() {
+        return save_path;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSave_path(String save_path) {
+        this.save_path = save_path;
     }
 
     public Date getDate() {
@@ -69,8 +69,8 @@ public class Board {
         return "Board{" +
                 "id='" + id + '\'' +
                 ", title='" + title + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", file_name='" + file_name + '\'' +
+                ", save_path='" + save_path + '\'' +
                 ", date=" + date +
                 '}';
     }
