@@ -2,12 +2,11 @@ package com.board.dao;
 
 
 import com.board.entity.Board;
-import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 
-@Mapper
+
 public interface BoardDAO {
     public List<Board> getBoardList();
     public void insertBoard (Board theBoard);

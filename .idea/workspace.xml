@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment=" no big changes">
+    <list default="true" id="2a8fc1f7-ba04-43a8-977c-dabf5b04ac7e" name="Changes" comment="jdbc driver manually added. still doesnt work. session factory not laoding">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/board/mapper/BoardMapperJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-07-02__12_02__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-07-02_오후_12_02_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/config/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/config/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/board/controller/BoardController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +103,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Carrot/Downloads/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar",
+    "last_opened_file_path": "C:/data/board3/src/main/java/com/board",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
@@ -111,7 +116,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.44942528",
     "settings.editor.selected.configurable": "editor.preferences.import",
-    "spring.configuration.checksum": "b01ee2eeeaf0981a4c8078365d38661d",
+    "spring.configuration.checksum": "3eb8c270953f4458b3cf87983c2ec8d3",
     "typescript.add.unambiguous.imports.on.the.fly": "true"
   },
   "keyToStringList": {
@@ -125,6 +130,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\data\board3\src\main\java\com\board" />
+      <recent name="C:\data\board3\src\main\resources" />
       <recent name="C:\Users\wbc89\Desktop\my.workplace\board3\src\main\java\com\board" />
       <recent name="C:\data\board3\src\main\webapp\WEB-INF\views\css" />
     </key>
@@ -380,6 +387,7 @@
       <workItem from="1656839824635" duration="13814000" />
       <workItem from="1656979150239" duration="9853000" />
       <workItem from="1657114121044" duration="3131000" />
+      <workItem from="1657507681848" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="working spring mvc setup with jdbc">
       <created>1656320716558</created>
@@ -444,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657240202299</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="jdbc driver manually added. still doesnt work. session factory not laoding">
+      <created>1657241389051</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657241389051</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +505,8 @@
     <MESSAGE value="Experiment" />
     <MESSAGE value="server error continues" />
     <MESSAGE value=" no big changes" />
-    <option name="LAST_COMMIT_MESSAGE" value=" no big changes" />
+    <MESSAGE value="jdbc driver manually added. still doesnt work. session factory not laoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="jdbc driver manually added. still doesnt work. session factory not laoding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

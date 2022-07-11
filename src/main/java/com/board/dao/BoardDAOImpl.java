@@ -1,8 +1,8 @@
 package com.board.dao;
 
 import com.board.entity.Board;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +16,7 @@ import java.util.List;
 public class BoardDAOImpl implements BoardDAO{
 
     @Autowired
-    private SessionFactory sessionFactory;
+    private SqlSessionFactory sqlSession;
 
     @Override
     public List<Board> getBoardList() {
